@@ -1,0 +1,11 @@
+All requirements in requirements.txt
+Install:
+	unzip to a project folder
+	cd myproject/
+	source project_env/bin/activate
+
+Test:
+	python api_documents/manage.py flush  # to truncate all tables for testing
+	scrapy crawl twitter_base_spider  # to run scrapy
+	python manage.py runserver  # run server
+	run url in browser: http://127.0.0.1:8000/apidoc/?doc_ids=225,226&include_article=True  # example query
